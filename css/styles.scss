@@ -1,0 +1,16 @@
+/*global*/
+* {
+  margin: 0;
+  padding: 0;
+}
+
+$base-color: olive;
+
+
+h1 {
+  color: cadetblue;
+
+  span {
+    color: $base-color;
+  }
+}

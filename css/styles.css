@@ -1,0 +1,14 @@
+/*global*/
+* {
+  margin: 0;
+  padding: 0;
+}
+
+h1 {
+  color: cadetblue;
+}
+h1 span {
+  color: olive;
+}
+
+/*# sourceMappingURL=styles.css.map */

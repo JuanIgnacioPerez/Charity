@@ -20,10 +20,556 @@
       rel="stylesheet"
       href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css"
     />
+    <link
+      rel="stylesheet"
+      href="https://unpkg.com/flickity@2/dist/flickity.min.css"
+    />
+    <link
+      href="https://fonts.googleapis.com/css?family=Open+Sans:300,400,600,700,800&display=swap"
+      rel="stylesheet"
+    />
     <link href="css/styles.css" rel="stylesheet" />
   </head>
   <body>
-    <h1>Hola <span>mundo!</span></h1>
+    <!-- Navigation -->
+    <div class="content">
+      <div class="container-fluid">
+        <nav
+          class="content__navbar navbar navbar-expand-md navbar-dark fixed-top"
+        >
+          <div class="container">
+            <a href="#" class="content__brand">
+              <img src="img/logo.svg" alt="logo" class="navbar-logo" />
+            </a>
+            <button
+              class="content__toggler navbar-toggler"
+              type="button"
+              data-toggle="collapse"
+              data-target="#navbarResponsive"
+              aria-controls="navbarResponsive"
+              aria-expanded="false"
+              aria-label="Toggle navigation"
+            >
+              <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarResponsive">
+              <ul class="content__list navbar-nav ml-auto">
+                <li class="content__item">
+                  <a class="content__link nav-link" href="#section1">Home</a>
+                </li>
+                <li class="content__item">
+                  <a class="content__link nav-link" href="#section2"
+                    >Our Causes</a
+                  >
+                </li>
+                <li class="content__item">
+                  <a class="content__link nav-link" href="#section3">Events</a>
+                </li>
+                <li class="content__item">
+                  <a class="content__link nav-link" href="#section4">News</a>
+                </li>
+                <li class="content__item">
+                  <a class="content__link nav-link" href="#section4"
+                    >Directors</a
+                  >
+                </li>
+                <li class="content__item">
+                  <a class="content__link nav-link" href="#section4"
+                    >Features</a
+                  >
+                </li>
+                <li class="content__donate">
+                  <i class="fa fa-heart" aria-hidden="true"></i>
+                  <a class="content__link nav-link" href="#section4">Donate!</a>
+                </li>
+              </ul>
+            </div>
+          </div>
+        </nav>
+      </div>
+      <!-- End Navigation -->
+
+      <!-- Banner -->
+      <section class="content__banner">
+        <div
+          id="carouselExampleSlidesOnly"
+          class="carousel slide"
+          data-ride="carousel"
+        >
+          <div class="content__carousel carousel-inner">
+            <div class="content__slide content__slide carousel-item active">
+              <img src="img/slide.jpg" class="d-block w-100" alt="image" />
+              <div class="container">
+                <div class="content__caption">
+                  <h5>Creative Clean Charity Design</h5>
+                  <p>
+                    Lorem ipsum dolor sit amet, consectetur adipiscing elit.
+                    Nunc accumsan pretium leo ut consectetur. Vestibulum a
+                    mattis ipsum. Nunc turpis velit, consequat quis ipsum eu,
+                    fermentum adipiscing ligula.
+                  </p>
+                  <button>Read More</button>
+                </div>
+              </div>
+            </div>
+            <div class="content__slide carousel-item">
+              <img src="img/slide2.jpg" class="d-block w-100" alt="image" />
+              <div class="container">
+                <div class="content__caption">
+                  <h5>Creative Clean Charity Design</h5>
+                  <p>
+                    Lorem ipsum dolor sit amet, consectetur adipiscing elit.
+                    Nunc accumsan pretium leo ut consectetur. Vestibulum a
+                    mattis ipsum. Nunc turpis velit, consequat quis ipsum eu,
+                    fermentum adipiscing ligula.
+                  </p>
+                  <button>Read More</button>
+                </div>
+              </div>
+            </div>
+            <div class="content__slide carousel-item">
+              <img src="img/slide3.jpg" class="d-block w-100" alt="image" />
+              <div class="container">
+                <div class="content__caption">
+                  <h5>Creative Clean Charity Design</h5>
+                  <p>
+                    Lorem ipsum dolor sit amet, consectetur adipiscing elit.
+                    Nunc accumsan pretium leo ut consectetur. Vestibulum a
+                    mattis ipsum. Nunc turpis velit, consequat quis ipsum eu,
+                    fermentum adipiscing ligula.
+                  </p>
+                  <button>Read More</button>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+      <!--End Banner -->
+
+      <!-- Causes -->
+      <section class="content__causes">
+        <div class="container">
+          <div class="row">
+            <div class="col-xs-12 col-sm-6 col-md-4">
+              <div class="content__box">
+                <div class="content__image">
+                  <img src="img/causes.jpg" alt="causes" />
+                </div>
+                <h4>Main Causes</h4>
+                <p>
+                  penatibus et magnis dis parturient montes, nascetur ridiculus
+                  muAenean commodo ligula eget dolor. Aenean massa. Cum sociis
+                </p>
+              </div>
+              <div class="content__more">
+                <div class="content__plus">
+                  <i class="fa fa-plus" aria-hidden="true"></i>
+                </div>
+              </div>
+            </div>
+            <div class="col-xs-12 col-sm-6 col-md-4">
+              <div class="content__box">
+                <div class="content__image">
+                  <img src="img/causes2.jpg" alt="causes" />
+                </div>
+                <h4>Main Causes</h4>
+                <p>
+                  Lorem ipsum dolor sit amet, consec tetuer adipiscing tttelit
+                  Lorem ipsum dolor sit amet, consectetuer adipiscing elit.
+                  Aenean commodo ligula eget dolor.
+                </p>
+              </div>
+              <div class="content__more">
+                <div class="content__plus">
+                  <i class="fa fa-plus" aria-hidden="true"></i>
+                </div>
+              </div>
+            </div>
+            <div class="col-xs-12 col-sm-6 col-md-4">
+              <div class="content__box">
+                <div class="content__image">
+                  <img src="img/causes3.jpg" alt="causes" />
+                </div>
+                <h4>Main Causes</h4>
+                <p>
+                  Lorem ipsum dolor sit amet, consec tetuer adipiscing tttelit
+                  Lorem ipsum dolor sit amet, consectetuer adipiscing elit.
+                  Aenean commodo ligula eget dolor.
+                </p>
+              </div>
+              <div class="content__more">
+                <div class="content__plus">
+                  <i class="fa fa-plus" aria-hidden="true"></i>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+      <!-- End Causes -->
+
+      <!-- Gallery -->
+      <section class="content__gallery">
+        <div class="container">
+          <div class="row">
+            <div class="col-sm-12">
+              <div class="content__title">
+                <h4>Gallery</h4>
+                <i class="fa fa-th" aria-hidden="true"></i>
+              </div>
+            </div>
+            <div class="col-xs-12 col-sm-6 col-md-4">
+              <div class="content__picture">
+                <img src="img/gallery.jpg" alt="gallery" />
+                <div class="content__overlay">
+                  <div class="content__ad">
+                    <i class="fa fa-plus" aria-hidden="true"></i>
+                  </div>
+                </div>
+              </div>
+            </div>
+
+            <div class="col-xs-12 col-sm-6 col-md-4">
+              <div class="content__picture">
+                <img src="img/gallery2.jpg" alt="gallery" />
+                <div class="content__overlay">
+                  <div class="content__ad">
+                    <i class="fa fa-plus" aria-hidden="true"></i>
+                  </div>
+                </div>
+              </div>
+            </div>
+
+            <div class="col-xs-12 col-sm-6 col-md-4">
+              <div class="content__picture">
+                <img src="img/gallery3.jpg" alt="gallery" />
+                <div class="content__overlay">
+                  <div class="content__ad">
+                    <i class="fa fa-plus" aria-hidden="true"></i>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+      <!-- End Gallery -->
+
+      <!-- latest -->
+      <section class="content__latest">
+        <div class="container">
+          <div class="row">
+            <div class="col-sm-12 col-md-8">
+              <div class="content__title">
+                <h4>latest events</h4>
+                <i class="fa fa-th" aria-hidden="true"></i>
+              </div>
+              <div class="row">
+                <div class="col-sm-12">
+                  <div class="content__event">
+                    <img src="/img/event.jpg" alt="event" />
+                    <div class="content__calendar">
+                      <div class="content__day">
+                        <span class="content__day--month">JUN</span>
+                        <span class="content__day--date">14TH</span>
+                      </div>
+                      <h5>
+                        Contrary to popular belief, Lorem Ipsum is not simply
+                        random
+                      </h5>
+                    </div>
+                  </div>
+                </div>
+                <div class="col-sm-12">
+                  <div class="row">
+                    <div class="col-sm-6">
+                      <div class="content__event">
+                        <img src="/img/event2.jpg" alt="event" />
+                        <div class="content__calendar">
+                          <div class="content__day">
+                            <span class="content__day--month">JUN</span>
+                            <span class="content__day--date">14TH</span>
+                          </div>
+                          <h5>
+                            Contrary to popular belief, Lorem Ipsum is not
+                            simply random
+                          </h5>
+                        </div>
+                        <p>
+                          Aliquam erat volutpat. Aenean sagittis dui vestibulum
+                          quam accumsan viverra. Mauris velit dolor, posuere non
+                          tempor eu.
+                        </p>
+                      </div>
+                    </div>
+                    <div class="col-sm-6">
+                      <div class="content__event">
+                        <img src="/img/event3.jpg" alt="event" />
+                        <div class="content__calendar">
+                          <div class="content__day">
+                            <span class="content__day--month">JUN</span>
+                            <span class="content__day--date">14TH</span>
+                          </div>
+                          <h5>
+                            Contrary to popular belief, Lorem Ipsum is not
+                            simply random
+                          </h5>
+                        </div>
+                        <p>
+                          Aliquam erat volutpat. Aenean sagittis dui vestibulum
+                          quam accumsan viverra. Mauris velit dolor, posuere non
+                          tempor eu.
+                        </p>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="col-sm-12 col-md-4">
+              <div class="content__title">
+                <h4>latest news</h4>
+                <i class="fa fa-th" aria-hidden="true"></i>
+              </div>
+              <div class="content__event">
+                <img src="/img/event4.jpg" alt="event" />
+                <div class="content__calendar">
+                  <div class="content__day">
+                    <span class="content__day--month">JUN</span>
+                    <span class="content__day--date">14TH</span>
+                  </div>
+                  <h5>
+                    Contrary to popular belief, Lorem Ipsum is not simply random
+                  </h5>
+                </div>
+                <p>
+                  Aliquam erat volutpat. Aenean sagittis dui vestibulum quam
+                  accumsan viverra. Mauris velit dolor, posuere non tempor eu.
+                </p>
+              </div>
+              <div class="content__event">
+                <img src="/img/event5.jpg" alt="event" />
+                <div class="content__calendar">
+                  <div class="content__day">
+                    <span class="content__day--month">JUN</span>
+                    <span class="content__day--date">14TH</span>
+                  </div>
+                  <h5>
+                    Contrary to popular belief, Lorem Ipsum is not simply random
+                  </h5>
+                </div>
+                <p>
+                  Aliquam erat volutpat. Aenean sagittis dui vestibulum quam
+                  accumsan viverra. Mauris velit dolor, posuere non tempor eu.
+                  Mauris velit dolor, posuere non tempor eu.
+                </p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <!-- End Latest -->
+
+      <!-- Sponsors -->
+      <section class="content__sponsors">
+        <div class="container">
+          <div class="row">
+            <div class="col-sm-12">
+              <div class="content__title">
+                <h4>Sponsers</h4>
+                <i class="fa fa-th" aria-hidden="true"></i>
+              </div>
+              <div class="content__flick">
+                <div class="content__cell">
+                  <img src="img/sponsores2.jpg" />
+                </div>
+                <div class="content__cell">
+                  <img src="img/sponsores.jpg" />
+                </div>
+                <div class="content__cell">
+                  <img src="img/sponsores3.jpg" />
+                </div>
+                <div class="content__cell">
+                  <img src="img/sponsores4.jpg" />
+                </div>
+                <div class="content__cell">
+                  <img src="img/sponsores6.jpg" />
+                </div>
+                <div class="content__cell">
+                  <img src="img/sponsores5.jpg" />
+                </div>
+                <div class="content__cell">
+                  <img src="img/sponsores7.jpg" />
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+      <!-- End Sponsors -->
+
+      <!-- Form -->
+
+      
+
+      <!-- End Form -->
+
+      <!-- Contact -->
+      <section class="content__contact">
+        <div class="container">
+          <div class="row">
+            <div class="col-xs-12 col-sm-6 col-md-3">
+              <div class="content__wrap">
+                <span class="content__heading">
+                  About
+                </span>
+                <p class="content__info">
+                  Aliquam erat volutpat. Aenean sagittis dui vestibulum quam
+                  accumsan viverra Mauris velit dolor, posuere non tempor eu.
+                </p>
+                <div class="content__icons">
+                  <i class="fa fa-dribbble" aria-hidden="true"></i>
+                  <i class="fa fa-flickr" aria-hidden="true"></i>
+                  <i class="fa fa-tumblr" aria-hidden="true"></i>
+                  <i class="fa fa-facebook" aria-hidden="true"></i>
+                </div>
+              </div>
+            </div>
+            <div class="col-xs-12 col-sm-6 col-md-3">
+              <div class="content__wrap">
+                <span class="content__heading">
+                  Latest News
+                </span>
+                <div class="content__pic">
+                  <img class="content__news" src="img/news2.jpg" alt="news" />
+                  <p class="content__info">
+                    Aliquam erat volutpat. Aenean sagittis dui accumsan viverra.
+                  </p>
+                </div>
+                <div class="content__pic">
+                  <img class="content__news" src="img/news3.jpg" alt="news" />
+                  <p class="content__info">
+                    Aliquam erat volutpat. Aenean sagittis dui dui accumsan
+                    viverra.
+                  </p>
+                </div>
+              </div>
+            </div>
+            <div class="col-xs-12 col-sm-6 col-md-3">
+              <div class="content__wrap">
+                <span class="content__heading">
+                  Flickr
+                </span>
+                <div class="content__flickrs">
+                  <div class="row">
+                    <div class="col-sm-4">
+                      <img
+                        class="content__flickr"
+                        src="img/flik.jpg"
+                        alt="flickr"
+                      />
+                      <img
+                        class="content__flickr"
+                        src="img/flik2.jpg"
+                        alt="flickr"
+                      />
+                    </div>
+                    <div class="col-sm-4">
+                      <img
+                        class="content__flickr"
+                        src="img/flik3.jpg"
+                        alt="flickr"
+                      />
+                      <img
+                        class="content__flickr"
+                        src="img/flik4.jpg"
+                        alt="flickr"
+                      />
+                    </div>
+                    <div class="col-sm-4">
+                      <img
+                        class="content__flickr"
+                        src="img/flik5.jpg"
+                        alt="flickr"
+                      />
+                      <img
+                        class="content__flickr"
+                        src="img/flik6.jpg"
+                        alt="flickr"
+                      />
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="col-xs-12 col-sm-6 col-md-3">
+              <div class="content__wrap">
+                <span class="content__heading">
+                  Twitter
+                </span>
+                <div class="content__pic">
+                  <i
+                    class="content__twitter fa fa-twitter"
+                    aria-hidden="true"
+                  ></i>
+                  <p class="content__info">
+                    <span class="content__info--user">@ENVATO</span>There are
+                    many variations of passag ... <br /><span
+                      class="content__info--min"
+                      >12 minute ago</span
+                    >
+                  </p>
+                </div>
+                <div class="content__pic">
+                  <i
+                    class="content__twitter fa fa-twitter"
+                    aria-hidden="true"
+                  ></i>
+                  <p class="content__info">
+                    <span class="content__info--user">@ENVATO</span>There are
+                    many variations of passag ... <br /><span
+                      class="content__info--min"
+                      >12 minute ago</span
+                    >
+                  </p>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+      <!-- End Contact -->
+
+      <!-- Footer -->
+      <footer>
+        <div class="content__footer">
+          <div class="container">
+            <div class="row">
+              <div class="col-sm-12 col-md-6">
+                <div class="content__copy">
+                  <p class="content__reserved">
+                    Copyrights © 2013 & All Rights Reserved
+                  </p>
+                </div>
+              </div>
+              <div class="col-sm-12 col-md-6">
+                <ul class="content__foot">
+                  <li><a href="#">Terms</a></li>
+                  <li>
+                    <a href="#">Faq<span>s</span></a>
+                  </li>
+                  <li><a href="#">Contact</a></li>
+                  <li class="content__donat"><a href="#">Donate</a></li>
+                </ul>
+              </div>
+            </div>
+          </div>
+        </div>
+      </footer>
+      <!-- End Footer -->
+    </div>
 
     <!-- Scripts -->
     <script
@@ -41,6 +587,7 @@
       integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM"
       crossorigin="anonymous"
     ></script>
+    <script src="https://unpkg.com/flickity@2/dist/flickity.pkgd.min.js"></script>
     <script src="js/script.js"></script>
   </body>
 </html>

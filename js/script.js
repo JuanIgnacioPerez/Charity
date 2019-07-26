@@ -1,3 +1,5 @@
-(function () {
-  console.log('do it')
-})();
+$('.content__flick').flickity({
+  contain: true,
+  groupCells: true,
+});
+
